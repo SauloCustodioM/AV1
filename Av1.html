@@ -12,25 +12,65 @@
             width: 100%;
             background-color: rgb(128,128,128,0.3);
             padding: 60px;
+            min-height: 100vh;
+            text-align: center;
+            
         }
 
         .second-menu{
             height: 100%;
             width: 100%;
-            background-color: aquamarine;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 60px;
+            min-height: 100vh;
 
         }
         
-        .first-colum{
-            height: 50px;
-            text-align: center;
+        .first-line{
+                        
+            
         }
 
-        .second-colum{
-            height: 40px;
-            background-color: blue;
+        .second-line{
+            margin-top: 50px;
+
         }
-        h1{
+        .third-line{
+            color: grey;
+            margin-top: 50px;            
+            
+        }
+        input{
+            margin: 0 20px !important;
+        }
+
+        a{
+            color: rgb(0, 0, 0, 1);
+            text-decoration: none;
+        }
+
+        .my-but1{
+            margin-top: 150px;
+            background-color: rgb(72, 72, 77, 0.7);
+            border-radius: 30px;
+            margin-bottom: 70px;
+            min-width: 250px;
+            color: rgb(37, 37, 37);
+            padding: 30px;
+        }
+
+        .my-but1:hover{
+            background-color: rgb(143, 94, 94);
+            color: white;
+        }
+        .my-but1:active{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+
+        h1,
+        h2,
+        h3{
             color: grey;
         }
 
@@ -43,14 +83,23 @@
         <div class="container-fluid first-menu">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 first-colum">
-                        <h1>LOGO</h1>
+                    <div class="col-sm-12 first-line">
+                        <h3>LOGO</h3>
                     </div>
-                    <p></p>
-                    <p></p>
-                    <div class="col-sm-12 first-colum">
-                        <h1>BEST HEADLINE IN THE WORLD</h1>
-                    </div>
+                </div>
+                <div class="col-sm-12 second-line">
+                    <h1>BEST HEADLINE IN THE WORLD</h1>
+                </div>
+                <div class="col-sm-12 third-line">
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                    <input type="email" name="email" id="email" placeholder="Seu email">
+                </div>
+                <div class="col-sm-12 fourth-line">
+                    <a href="#progresse">
+                        <button class="my-but1">PROSSEGUIR</button>
+                    </a>
+                    
+                    <button class="my-but1">PROSSEGUIR</button>
                 </div>
             </div>
         </div>
@@ -59,14 +108,24 @@
         <div class="container-fluid second-menu">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12"></div>
+                    <div class="col-sm-12">
+                        <h1 id="progresse">SASLCEVEVKASMD</h1>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>    
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>    
 </body>
 </html>
