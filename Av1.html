@@ -5,29 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colorum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
     <style>
         .first-menu{
             height: 100%;
             width: 100%;
             background-image: url(https://static.vecteezy.com/system/resources/previews/002/430/765/non_2x/abstract-background-with-colorful-gradient-vector.jpg);
-            padding: 100px;
+            padding: 50px;
             min-height: 100vh;
-            text-align: center;            
+            text-align: center;   
+            background-size: cover;         
         }
         .second-menu{
             height: 100%;
             width: 100%;
-            background-image: url(https://www.estudioroxo.com.br/wp-content/uploads/post-blog-estudio-roxo-branding-a-paleta-de-cores-na-construcao-de-uma-identidade-visual-forte-3.jpg);
-            padding: 100px;
+            background-color: rgb(0, 255, 255, 0.2);
+            padding: 50px;
             min-height: 100vh;
             text-align: center;
         }
         .extra-menu{
             height: 100%;
             width: 100%;
-            background-image: url(https://www.estudioroxo.com.br/wp-content/uploads/post-blog-estudio-roxo-branding-a-paleta-de-cores-na-construcao-de-uma-identidade-visual-forte-3.jpg);
-            padding: 100px;
+            padding: 50px;
             min-height: 94vh;
+            background-color: rgb(0, 255, 255, 0.2);
         }
         .third-menu{
             margin-top: 150px !important; 
@@ -35,12 +39,13 @@
         }
         
         .Logo{            
-            margin-bottom: 50px;
+            font-family: 'Tapestry', cursive;
             color: black;
+            
         }
-        
+         */
         .first-line{
-            margin-bottom: 50px;                        
+            margin-bottom: 30px;                       
         }
         .second-line{
             margin-top: 50px;
@@ -54,7 +59,7 @@
         .fourth-line{
             margin-top: 50px;
             text-align: left;
-            margin-left: 70px;
+            
         }
 
         input{
@@ -86,24 +91,27 @@
             background-size: cover;
             background-position: center;            
         }
+        .icon{
+            width: 50px;
+            height: 50px;
+            border-radius: 70%;
+            background-image: url(https://buriticupu.ifma.edu.br/wp-content/uploads/sites/16/2019/08/pngtree-user-icon-vector-illustration-in-glyph-style-for-any-purpose-png-image_975597.jpg);
+            background-size: cover;
+            background-position: center;
+            align-items: center;
+        }
+
+        .botoes{
+            align-items: center;
+            margin-top: 40px;
+
+        }
 
         .my-but1{
             margin: 0 40px;
             margin-top: 20px;
-            background-color: rgb(141, 141, 188);
-            border-radius: 50px;
             height: 100px;
             width: 250px;
-            color: rgb(37, 37, 37);
-            padding: 20px 60px;
-        }
-        .my-but1:hover{
-            background-color: rgb(67, 94, 180);
-            color: white;
-        }
-        .my-but1:active{
-            background-color: rgb(51, 1, 187);
-            color: rgb(0, 0, 0);
         }
 
         .my-but2{
@@ -122,6 +130,7 @@
         }
 
     </style>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
@@ -129,15 +138,15 @@
         <div class="container-fluid first-menu">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 Logo">
+                    <div class="col-sm-12">
                         <div class="circulo" style="margin: auto;"></div>
                     </div>
                 </div>
-                <div class="col-sm-12 first-line">
+                <div class="col-sm-12 Logo" style="margin-bottom: 20px;">
                     <h1>Colorum</h1>
                 </div>
                 <div class="col-sm-12">
-                    <h2 style="margin-bottom: 230px;">Um estudo fácil e rápido sobre as cores.</h2>
+                    <h2 style="margin-bottom: px;">Um estudo fácil e rápido sobre as cores.</h2>
                 </div>
                 <div class="col-sm-12 second-line">
                     <h4>Curiosidades e informações inscreva-se no nosso site: </h4>
@@ -147,15 +156,16 @@
                     <input type="email" name="email" id="email" placeholder="Seu email">
                     <button class="my-but2">Registrar-se</button>
                 </div>
-                <div class="col-sm-12">
-                    <a href="#progress" style="color: rgb(128, 128, 128);">
-                        <button class="my-but1">Cores Primárias e Secundárias</button>
+                <div class="col-sm-12 botoes">
+                    
+                    <a class="btn btn-primary my-but1" href="#progress" style="padding: 24px 60px;">
+                        Cores Primárias e Secundárias
                     </a>
-                    <a href="#descer">
-                        <button class="my-but1">Video - Cores secundárias e terciárias</button> 
+                    <a class="btn btn-primary my-but1" href="#descer" style="padding: 24px 10px;">
+                        Video - Cores secundárias e terciárias 
                     </a>
-                    <a href="#continue" style="margin-top: 10px;">
-                        <button class="my-but1">RGB</button> 
+                    <a class="btn btn-primary my-but1" href="#continue" style="padding: 36px 60px;">
+                        RGB 
                     </a>
                 </div>
             </div>
@@ -167,14 +177,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1 style="text-align: center; margin-bottom: 100px;">Cores Primárias</h1>
+                        <h1 style="text-align: center; margin-bottom: 40px;">Cores Primárias</h1>
                     </div>
                     <div class="col-sm-4 first-line">
-                        <div class="row">
-                            <div class="col-lg-1">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-lg-4">
                                 <div class="circulo-color" style="background-color: red;"></div>
                             </div>
-                            <div class="col-lg-9 fourth-line">
+                            <div class="col-lg-8 fourth-line">
                                 <h2>Vemelho</h2>
                                 <h4>Cor Primária</h4>
                             </div>
@@ -182,11 +192,11 @@
                                                        
                     </div>
                     <div class="col-sm-4 first-line">
-                        <div class="row">
-                            <div class="col-lg-1">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-lg-4">
                                 <div class="circulo-color" style="background-color: blue;"></div>
                             </div>
-                            <div class="col-lg-9 fourth-line">
+                            <div class="col-lg-8 fourth-line">
                                 <h2>Azul</h2>
                                 <h4>Cor Primária</h4>
                             </div>
@@ -194,11 +204,11 @@
                         
                     </div>
                     <div class="col-sm-4 first-line">
-                        <div class="row">
-                            <div class="col-lg-1">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-lg-4">
                                 <div class="circulo-color" style="background-color: yellow;"></div>
                             </div>
-                            <div class="col-lg-9 fourth-line">
+                            <div class="col-lg-8 fourth-line">
                                 <h2>Amarelo</h2>
                                 <h4>Cor Primária</h4>
                             </div>
@@ -206,36 +216,36 @@
                         
                     </div>
                     <div class="col-sm-12">
-                        <h1 style="text-align: center; margin-bottom: 100px;">Cores Secundárias</h1>
+                        <h1 style="text-align: center; margin-bottom: 40px; margin-top: 50px;">Cores Secundárias</h1>
                     </div>
                     <div class="col-sm-4">
-                        <div class="row" >
-                            <div class="col-lg-1">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-lg-4">
                                 <div class="circulo-color" style="background-color: orange;"></div>
                             </div>
-                            <div class="col-lg-9 fourth-line">
+                            <div class="col-lg-8 fourth-line">
                                 <h2>Laranja</h2>
                                 <h4>Amarelo + Vemelho</h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="row">
-                            <div class="col-lg-1">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-lg-4">
                                 <div class="circulo-color" style="background-color: rgb(255, 0, 255);"></div>
                             </div>
-                            <div class="col-lg-9 fourth-line">
+                            <div class="col-lg-8 fourth-line">
                                 <h2>Violeta/Magenta</h2>
                                 <h4>Azul + Vermelho</h4>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="row">
-                            <div class="col-lg-1">
+                        <div class="row" style="align-items: center;">
+                            <div class="col-lg-4">
                                 <div class="circulo-color" style="background-color: green;"></div>
                             </div>
-                            <div class="col-lg-9 fourth-line">
+                            <div class="col-lg-8 fourth-line">
                                 <h2>Verde</h2>
                                 <h4>Azul + Amarelo</h4>
                             </div>
@@ -252,7 +262,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6" style="text-align: center; margin-top: 120px;">
-                        <iframe width="640" height="360" src="https://www.youtube.com/embed/nyRBLBtmC6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                        <iframe src="https://www.youtube.com/embed/nyRBLBtmC6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="height: 100%; width: 100%;"></iframe>  
                     </div>
                     <div class="col-sm-6 third-menu">
                         <h1>Cores Secundárias e Terciárias</h1>
@@ -282,7 +292,7 @@
                         </h3>
                     </div>
                     <div class="col-sm-6 image" style="text-align: center; margin-top: 100px;">
-                        <img width="520" height="520" src="https://i0.wp.com/www.hisour.com/wp-content/uploads/2018/03/RGB-color-model.jpg?fit=720%2C720&ssl=1">
+                        <img src="https://i0.wp.com/www.hisour.com/wp-content/uploads/2018/03/RGB-color-model.jpg?fit=720%2C720&ssl=1" style="width: 100%; height: 100%;">
                     </div>
                 </div>
             </div>
@@ -304,18 +314,19 @@
                 </div>
                 <div class="row" style="margin-top: 50px;">
                     <div class="col-sm-4"></div>
-                    <div class="col-sm-1" style="margin-right: 10px;">
-                        <div class="circulo"></div>
+                    <div class="col-sm-1">
+                        <div class="icon" ></div>
                     </div>
-                    <div class="col-sm-1" style="margin-right: 10px;">
-                        <div class="circulo"></div>
+                    <div class="col-sm-1" >
+                        <div class="icon"></div>
                     </div>
-                    <div class="col-sm-1" style="margin-right: 10px;">
-                        <div class="circulo"></div>
+                    <div class="col-sm-1">
+                        <div class="icon"></div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="circulo"></div>
-                    </div>                   
+                    <div class="col-sm-1">
+                        <div class="icon"></div>
+                    </div>
+                    <div class="col-sm-4"></div>                   
                 </div>
             </div>
         </div>
@@ -324,13 +335,13 @@
     <section>
         <div class="container-fluid extra-menu">
             <div class="container">
-                <div class="col-sm-12 second-line" style="margin-top: 50px;">
+                <div class="col-sm-12 second-line" style="font-family: 'Tapestry', cursive;">
                     <h1>Colorum</h1>
                 </div>
                 <div class="row">
                     <div class="col-sm-3"></div>                
                     <div class="col-sm-6">
-                        <h3 style="font-size: 20px; text-align: center; margin-top: 100px;">Inscreva-se na nossa página para receber mais estudos e curiosidades sobre o mundo das cores.</h3>
+                        <h3 style="font-size: 20px; text-align: center; margin-top: 50px;">Inscreva-se na nossa página para receber mais estudos e curiosidades sobre o mundo das cores.</h3>
                     </div>
                     <div class="col-sm-3"></div>
                 </div>
@@ -344,10 +355,10 @@
         <div class="container-fluid" style="min-height: 6vh; background-image: url(https://cdn.colab55.com/images/1584396681/u/como-usar-o-circulo-cromatico-para-escolher-as-cores-na-decoracao-share.png);">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-sm-4 Logo">
                         <h2 style="text-align: left; margin-top: 9px;">Colorum</h2>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-8">
                         <h3 style="font-size: 20px; margin-top: 14px; text-align: end;">@All Right Reserved Andre Haswolinsk.</h3>
                     </div>
                 </div>
